@@ -14,6 +14,7 @@
 
 .slogan {
   text-align: center;
+  font-family: 'Tangerine', serif;
 }
 
 .home,
@@ -25,14 +26,50 @@
 .method--name,
 .method--usage {
   font-size: 3rem;
+  margin-bottom: 15px;
 }
 
 .usage--msg {
   text-align: center;
+  font-family: 'Lobster';
+  font-size: 2rem;
+  padding: 1%;
+}
+
+.usageBtns {
+  display: flex;
+  justify-content: center;
+  margin: 1em;
+}
+
+.btn--modify,
+.btn--return,
+.btn--non-modify {
+  cursor: pointer;
+  font-size: 23px;
+  padding: 10px;
+  margin: 5px;
+  background-color: darkgoldenrod;
+  color: #fff;
+  border: 1px solid;
+  border-radius: 3px;
+  border-radius: 1em;
+  outline: none;
 }
 
 nav {
+  position: relative;
   border-bottom: 2px solid;
+}
+
+.dateTime {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  background-color: violet;
+  font-family: cursive;
+  padding: 2px;
+  border: 1px solid;
 }
 
 .menu {
@@ -43,7 +80,9 @@ nav {
   margin-top: 1em;
 }
 
-.center {
+.center--array,
+.center--string,
+.center--math {
   display: none;
   text-align: center;
   opacity: 0;
@@ -64,51 +103,24 @@ nav {
 
 .home--categories {
   margin-top: 1em;
+  display: flex;
 }
 
-.array--methods {
+.array--methods,
+.string--methods,
+.math--methods {
+  outline: none;
   cursor: pointer;
   margin: 2px 0 0px 1px;
-  width: 33%;
+  width: 100%;
   padding: 10px;
   text-align: center;
   background-color: white;
-  border-radius: 5px;
+  border-radius: 7rem;
   box-shadow: 0 1rem 1rem rgb(0 0 0 / 30%);
   z-index: 10;
   font-size: 5rem;
   background: linear-gradient(0.25turn, #52b1a6, #ebf8e1, #8c4f69);
-}
-
-.string--methods {
-  cursor: pointer;
-  float: right;
-  margin: 2px 1px 0 0;
-  width: 33%;
-  padding: 10px;
-  text-align: center;
-  background-color: white;
-  border-radius: 5px;
-  box-shadow: 0 1rem 1rem rgb(0 0 0 / 30%);
-  z-index: 10;
-  font-size: 5rem;
-  background: linear-gradient(0.25turn, #3f87a6, #fdedec, #f69d3c);
-}
-
-.math--methods {
-  position: absolute;
-  top: 70%;
-  cursor: pointer;
-  margin: auto;
-  width: 33.88%;
-  padding: 10px;
-  text-align: center;
-  background-color: white;
-  border-radius: 5px;
-  box-shadow: 0 1rem 1rem rgb(0 0 0 / 30%);
-  z-index: 10;
-  font-size: 5rem;
-  background: linear-gradient(0.25turn, #ebf8e1, #f39993, #884ea0);
 }
 
 .hidden {
@@ -160,4 +172,26 @@ nav {
 
 .usage--page {
   display: none;
+}
+
+.parentEl {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.message {
+  text-align: center;
+  font-family: 'Kaushan Script';
+  font-size: 3rem;
+}
+
+.one--method {
+  cursor: pointer;
+  background-color: thistle;
+  margin: 1rem;
+  font-size: 2rem;
+  padding: 2px;
+  border: 2px;
+  text-align: center;
+  border-radius: 7px;
 }

@@ -7,21 +7,26 @@
 
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Tangerine"
+      href="https://fonts.googleapis.com/css?family=Tangerine|Lobster|Kaushan Script"
     />
     <style>
       .slogan {
-        font-family: 'Tangerine', serif;
+        /* font-family: 'Tangerine', serif; */
         font-size: 48px;
       }
     </style>
 
     <link rel="stylesheet" href="style.css" />
-    <script defer src="script.js"></script>
+    <script defer type="module" src="script.js"></script>
     <title>ARMAST</title>
   </head>
   <body>
     <nav>
+      <div class="dateTime">
+        <div class="currDate"></div>
+        <div class="currTime"></div>
+      </div>
+
       <h1 class="logo">ARMAST</h1>
       <p class="slogan">...the methods hub</p>
 
@@ -35,35 +40,75 @@
       <button class="string--methods">STRING METHODS</button>
       <button class="math--methods">MATH METHODS</button>
     </div>
+    <div class="center--parent">
+      <div class="center--array">
+        <div class="push btn--show-modal">push</div>
+        <div class="unshift btn--show-modal">unshift</div>
+        <div class="pop btn--show-modal">pop</div>
+        <div class="shift btn--show-modal">splice</div>
+        <div class="reverse btn--show-modal">reverse</div>
+        <div class="sort btn--show-modal">sort</div>
+        <div class="fill btn--show-modal">fill</div>
+        <div class="map btn--show-modal">map</div>
+        <div class="filter btn--show-modal">filter</div>
+        <div class="slice btn--show-modal">slice</div>
+        <div class="concat btn--show-modal">concat</div>
+        <div class="flat btn--show-modal">flat</div>
+        <div class="flatMap btn--show-modal">flatMap</div>
+        <div class="indexOf btn--show-modal">indexOf</div>
+        <div class="findIndex btn--show-modal">findIndex</div>
+        <div class="lastIndex btn--show-modal">lastIndex</div>
+        <div class="find btn--show-modal">find</div>
+        <div class="copyWithin btn--show-modal">copyWithin</div>
+        <div class="includes btn--show-modal">includes</div>
+        <div class="some btn--show-modal">some</div>
+        <div class="every btn--show-modal">every</div>
+        <div class="join btn--show-modal">join</div>
+        <div class="reduce btn--show-modal">reduce</div>
+        <div class="forEach btn--show-modal">forEach</div>
+        <div class="keys btn--show-modal">keys</div>
+        <div class="values btn--show-modal">values</div>
+        <div class="entries btn--show-modal">entries</div>
+      </div>
 
-    <div class="center">
-      <div class="push btn--show-modal">push</div>
-      <div class="unshift btn--show-modal">unshift</div>
-      <div class="pop btn--show-modal">pop</div>
-      <div class="shift btn--show-modal">splice</div>
-      <div class="reverse btn--show-modal">reverse</div>
-      <div class="sort btn--show-modal">sort</div>
-      <div class="fill btn--show-modal">fill</div>
-      <div class="map btn--show-modal">map</div>
-      <div class="filter btn--show-modal">filter</div>
-      <div class="slice btn--show-modal">slice</div>
-      <div class="concat btn--show-modal">concat</div>
-      <div class="flat btn--show-modal">flat</div>
-      <div class="flatMap btn--show-modal">flatMap</div>
-      <div class="indexOf btn--show-modal">indexOf</div>
-      <div class="findIndex btn--show-modal">findIndex</div>
-      <div class="lastIndex btn--show-modal">lastIndex</div>
-      <div class="find btn--show-modal">find</div>
-      <div class="copyWithin btn--show-modal">copyWithin</div>
-      <div class="includes btn--show-modal">includes</div>
-      <div class="some btn--show-modal">some</div>
-      <div class="every btn--show-modal">every</div>
-      <div class="join btn--show-modal">join</div>
-      <div class="reduce btn--show-modal">reduce</div>
-      <div class="forEach btn--show-modal">forEach</div>
-      <div class="keys btn--show-modal">keys</div>
-      <div class="values btn--show-modal">values</div>
-      <div class="entries btn--show-modal">entries</div>
+      <div class="center--string">
+        <div class="at btn--show-modal">at</div>
+        <div class="charAt btn--show-modal">charAt</div>
+        <div class="charCodeAt btn--show-modal">charCodeAt</div>
+        <div class="codePointAt btn--show-modal">codePointAt</div>
+        <div class="concat btn--show-modal">concat</div>
+        <div class="startsWith btn--show-modal">startsWith</div>
+        <div class="endsWith btn--show-modal">endsWith</div>
+        <div class="fromCharCode btn--show-modal">fromCharCode</div>
+        <div class="fromCharPoint btn--show-modal">fromCharPoint</div>
+        <div class="incldes btn--show-modal">includes</div>
+        <div class="indexOf btn--show-modal">indexOf</div>
+        <div class="lastIndexOf btn--show-modal">lastIndexOf</div>
+        <div class="localeCompare btn--show-modal">localeCompare</div>
+        <div class="match btn--show-modal">match</div>
+        <div class="matchAll btn--show-modal">matchAll</div>
+        <div class="normalize btn--show-modal">normalize</div>
+        <div class="padStart btn--show-modal">padStart</div>
+        <div class="padEnd btn--show-modal">padEnd</div>
+        <div class="replace btn--show-modal">replace</div>
+        <div class="replaceAll btn--show-modal">replaceAll</div>
+        <div class="substring btn--show-modal">substring</div>
+        <div class="split btn--show-modal">split</div>
+        <div class="toLocaleLowerCase btn--show-modal">toLocaleLowerCase</div>
+        <div class="toLocaleUpperCase btn--show-modal">toLocaleUpperCase</div>
+        <div class="toLowerCase btn--show-modal">toLowerCase</div>
+        <div class="toUpperCase btn--show-modal">toUpperCase</div>
+        <div class="toString btn--show-modal">toString</div>
+        <div class="trim btn--show-modal">trim</div>
+        <div class="trimStart btn--show-modal">trimStart</div>
+        <div class="trimEnd btn--show-modal">trimEnd</div>
+        <div class="valueOf btn--show-modal">valueOf</div>
+      </div>
+
+      <div class="center--math">
+        <div class="abs btn--show-modal">abs</div>
+        <div class="ceil btn--show-modal">ceil</div>
+      </div>
     </div>
 
     <div class="modal hidden">
@@ -76,16 +121,16 @@
       <a class="method--reference" href="#"></a>
     </div>
     <div class="usage--page">
-      <h3 class="usage--msg">
-        Some Array methods share common characteristics, some return a value,
-        others modify the original array, etc
-      </h3>
-      <p>Group by ability to:</p>
-      <button class="btn--modify">Modify Original Array</button>
-      <button class="btn--return">Return A Value</button>
-      <button class="btn--modify_and_return">
-        Modify Original Array & Return A Value
-      </button>
+      <h3 class="usage--msg"></h3>
+
+      <div class="usageBtns">
+        <button class="btn--modify"></button>
+        <button class="btn--return">Returns A Value</button>
+        <button class="btn--non-modify"></button>
+      </div>
+
+      <div class="message"></div>
+      <div class="parentEl"></div>
     </div>
 
     <div class="overlay hidden"></div>
