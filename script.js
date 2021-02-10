@@ -119,6 +119,7 @@ function updateStyles(className) {
 
     usageMsg.textContent = `Some ${groupName} methods modify the original ${groupName}, but some do not.`;
     ParentEl.innerHTML = '';
+    usageBTNs.style.display = 'flex';
     btnModify.textContent = `These ${groupName} methods modify the original ${groupName}`;
     btnNotModify.textContent = `These ${groupName} methods will not modify the original ${groupName}`;
     MessageEl.textContent = '';
