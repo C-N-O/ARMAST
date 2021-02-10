@@ -6,7 +6,6 @@ export const arrayMethods = [
     reference:
       'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push',
     mod: true,
-    returns: true,
     returnValue: 'New length of the array, as a number',
   },
   {
@@ -16,7 +15,6 @@ export const arrayMethods = [
     reference:
       'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift',
     mod: true,
-    returns: true,
     returnValue: 'New length of the array, as a number',
   },
   {
@@ -26,7 +24,6 @@ export const arrayMethods = [
     reference:
       'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop',
     mod: true,
-    returns: true,
     returnValue: 'The element that was removed',
   },
   {
@@ -36,7 +33,6 @@ export const arrayMethods = [
     reference:
       'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice',
     mod: true,
-    returns: true,
     returnValue: 'An array containing the deleted elements',
   },
 
@@ -47,7 +43,6 @@ export const arrayMethods = [
     reference:
       'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse',
     mod: true,
-    returns: true,
     returnValue: 'The reversed array',
   },
   {
@@ -57,7 +52,6 @@ export const arrayMethods = [
     reference:
       'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort',
     mod: true,
-    returns: true,
     returnValue: 'The sorted array',
   },
   {
@@ -67,7 +61,6 @@ export const arrayMethods = [
     reference:
       'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/fill',
     mod: true,
-    returns: true,
     returnValue: 'The filled array',
   },
   {
@@ -77,7 +70,6 @@ export const arrayMethods = [
     reference:
       'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map',
     mod: false,
-    returns: true,
     returnValue:
       'A new array with each element being the result of the callback function.',
   },
@@ -88,7 +80,6 @@ export const arrayMethods = [
     reference:
       'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter',
     mod: false,
-    returns: true,
     returnValue:
       'A new array with the elements that pass the test. If no elements pass the test, an empty array will be returned.',
   },
@@ -99,7 +90,6 @@ export const arrayMethods = [
     reference:
       'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice',
     mod: false,
-    returns: true,
     returnValue: 'A new array containing the extracted elements.',
   },
   {
@@ -109,7 +99,6 @@ export const arrayMethods = [
     reference:
       'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat',
     mod: false,
-    returns: true,
     returnValue: 'A new Array instance.',
   },
   {
@@ -119,7 +108,6 @@ export const arrayMethods = [
     reference:
       'https://developer.mozilla.org/en-us/docs/Web/JavaScript/Reference/Global_Objects/Array/flat',
     mod: false,
-    returns: true,
     returnValue:
       'A new array with the sub-array elements concatenated into it.',
   },
@@ -130,7 +118,6 @@ export const arrayMethods = [
     reference:
       'https://developer.mozilla.org/en-us/docs/Web/JavaScript/Reference/Global_Objects/Array/flatMap',
     mod: false,
-    returns: true,
     returnValue:
       'A new array with each element being the result of the callback function and flattened to a depth of 1.',
   },
@@ -141,7 +128,6 @@ export const arrayMethods = [
     reference:
       'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf',
     mod: false,
-    returns: true,
     returnValue:
       'The first index of the element in the array; -1 if not found.',
   },
@@ -152,7 +138,6 @@ export const arrayMethods = [
     reference:
       'https://developer.mozilla.org/en-us/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex',
     mod: false,
-    returns: true,
     returnValue:
       'The index of the first element in the array that passes the test. Otherwise, -1.',
   },
@@ -163,7 +148,6 @@ export const arrayMethods = [
     reference:
       'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/lastIndexOf',
     mod: false,
-    returns: true,
     returnValue: 'The last index of the element in the array; -1 if not found.',
   },
   {
@@ -173,7 +157,6 @@ export const arrayMethods = [
     reference:
       'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find',
     mod: false,
-    returns: true,
     returnValue:
       'The value of the first element in the array that satisfies the provided testing function. Otherwise, undefined is returned.',
   },
@@ -184,7 +167,6 @@ export const arrayMethods = [
     reference:
       'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/copyWithin',
     mod: true,
-    returns: true,
     returnValue: 'The modified array.',
   },
   {
@@ -194,7 +176,6 @@ export const arrayMethods = [
     reference:
       'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes',
     mod: false,
-    returns: true,
     returnValue:
       'A boolean. True if the value is found in the array, else false.',
   },
@@ -205,7 +186,6 @@ export const arrayMethods = [
     reference:
       'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some',
     mod: false,
-    returns: true,
     returnValue:
       'A boolean. True if atleast one value passes the test, else false.',
   },
@@ -216,7 +196,6 @@ export const arrayMethods = [
     reference:
       'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every',
     mod: false,
-    returns: true,
     returnValue: 'A boolean. True if all values pass the test, else false.',
   },
   {
@@ -226,7 +205,6 @@ export const arrayMethods = [
     reference:
       'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join',
     mod: false,
-    returns: true,
     returnValue: 'A string with all array elements joined',
   },
   {
@@ -236,7 +214,6 @@ export const arrayMethods = [
     reference:
       'https://developer.mozilla.org/en-us/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce',
     mod: false,
-    returns: true,
     returnValue: 'The single value that results from the reduction.',
   },
   {
@@ -246,7 +223,6 @@ export const arrayMethods = [
     reference:
       'https://developer.mozilla.org/en-us/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach',
     mod: false,
-    returns: true,
     returnValue: 'undefined',
   },
   {
@@ -256,7 +232,6 @@ export const arrayMethods = [
     reference:
       'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/keys',
     mod: false,
-    returns: true,
     returnValue: 'A new Array iterator object.',
   },
   {
@@ -266,7 +241,6 @@ export const arrayMethods = [
     reference:
       'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/values',
     mod: false,
-    returns: true,
     returnValue: 'A new Array iterator object.',
   },
   {
@@ -276,7 +250,6 @@ export const arrayMethods = [
     reference:
       'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/entries',
     mod: false,
-    returns: true,
     returnValue: 'A new Array iterator object.',
   },
 ];
@@ -289,7 +262,6 @@ export const stringMethods = [
     reference:
       'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/at',
     mod: false,
-    returns: true,
     returnValue:
       'A String consisting of the single UTF-16 code unit located at the specified position. Returns undefined if the given index can not be found.',
   },
@@ -302,7 +274,6 @@ export const mathMethods = [
     reference:
       'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/abs',
     mod: false,
-    returns: true,
     returnValue: 'The absolute value of the given number.',
   },
   {
@@ -312,7 +283,6 @@ export const mathMethods = [
     reference:
       'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/ceil',
     mod: false,
-    returns: true,
     returnValue:
       'The smallest integer greater than or equal to the given number.',
   },

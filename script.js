@@ -18,8 +18,7 @@ const btnNotModify = document.querySelector('.btn--non-modify');
 const modal = document.querySelector('.modal');
 const overlay = document.querySelector('.overlay');
 let close = document.querySelector('.close-modal');
-const modOriArrEl = document.querySelector('.modifiesOriginalArry');
-const returnsEl = document.querySelector('.returns');
+const modOriArrEl = document.querySelector('.modifiesOriginalArray');
 const returnValueEl = document.querySelector('.return--value');
 
 const methodName = document.querySelector('.method--name');
@@ -60,7 +59,6 @@ const openModal = function (
   method_Usage = 'to be updated',
   method_Reference = 'to be updated',
   modifies = false,
-  returns = false,
   returnValue = ''
 ) {
   methodName.textContent = method_Name;
@@ -69,7 +67,6 @@ const openModal = function (
   methodReference.setAttribute('target', '_blank');
   methodReference.textContent = 'Reference';
   modOriArrEl.textContent = 'Modifies The Original Array: ' + modifies;
-  returnsEl.textContent = 'Returns: ' + returns;
   returnValueEl.textContent = 'Return Value: ' + returnValue;
 
   overlay.classList.remove('hidden');
@@ -93,16 +90,9 @@ function showModifiers() {
   renderArrayList(result, str);
 }
 
-//show all methods that return a value
-function showReturners() {
-  const str = `See ${groupName} methods that will return a value`;
-  const result = methodGroup.filter(el => el.returns === true);
-  renderArrayList(result, str);
-}
-
 //show all methods that do not  modify the original array
 function showNonModifiers() {
-  const str = `See ${groupName} methods will not modify the original ${groupName}`;
+  const str = `See ${groupName} methods that will not modify the original ${groupName}`;
   const result = methodGroup.filter(el => el.mod === false);
   renderArrayList(result, str);
 }
@@ -129,7 +119,6 @@ function updateStyles(className) {
 
     usageMsg.textContent = `Some ${groupName} methods modify the original ${groupName}, but some do not.`;
     ParentEl.innerHTML = '';
-    usageBTNs.style.display = 'block';
     btnModify.textContent = `These ${groupName} methods modify the original ${groupName}`;
     btnNotModify.textContent = `These ${groupName} methods will not modify the original ${groupName}`;
     MessageEl.textContent = '';
@@ -196,14 +185,7 @@ centerParent.addEventListener('click', function (e) {
   const btn = e.target.textContent;
   methodGroup.forEach(function (el) {
     if (el.name === btn)
-      openModal(
-        el.name,
-        el.function,
-        el.reference,
-        el.mod,
-        el.returns,
-        el.returnValue
-      );
+      openModal(el.name, el.function, el.reference, el.mod, el.returnValue);
   });
 });
 
@@ -218,7 +200,6 @@ usagePage.addEventListener('click', function (e) {
   const btn = e.target;
   if (methodGroup === '') return;
   if (btn.classList.contains('btn--modify')) showModifiers();
-  if (btn.classList.contains('btn--return')) showReturners();
   if (btn.classList.contains('btn--non-modify')) showNonModifiers();
 });
 
@@ -231,7 +212,6 @@ ParentEl.addEventListener('click', function (e) {
     found.function,
     found.reference,
     found.mod,
-    found.returns,
     found.returnValue
   );
 });

@@ -148,8 +148,7 @@ nav {
   left: 50%;
 }
 
-.modifiesOriginalArry,
-.returns,
+.modifiesOriginalArray,
 .return--value {
   font-size: 1em;
   text-transform: capitalize;
