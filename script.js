@@ -38,22 +38,22 @@ let date = '';
 let methodGroup = '';
 let groupName = '';
 
-setInterval(() => {
-  date = new Date();
-  console.log(date);
-  CurrDateEl.textContent = `${date.getDay().toString().padStart(2, '0')}/${(
-    date.getMonth() + 1
-  )
-    .toString()
-    .padStart(2, '0')}/${date.getFullYear()}`;
-  CurrTimeEl.textContent = `${date
-    .getHours()
-    .toString()
-    .padStart(2, '0')} : ${date
-    .getMinutes()
-    .toString()
-    .padStart(2, '0')} : ${date.getSeconds()}`;
-}, 1000);
+// setInterval(() => {
+//   date = new Date();
+//   console.log(date);
+//   CurrDateEl.textContent = `${date.getDay().toString().padStart(2, '0')}/${(
+//     date.getMonth() + 1
+//   )
+//     .toString()
+//     .padStart(2, '0')}/${date.getFullYear()}`;
+//   CurrTimeEl.textContent = `${date
+//     .getHours()
+//     .toString()
+//     .padStart(2, '0')} : ${date
+//     .getMinutes()
+//     .toString()
+//     .padStart(2, '0')} : ${date.getSeconds()}`;
+// }, 1000);
 
 const openModal = function (
   method_Name,
