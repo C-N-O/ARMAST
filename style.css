@@ -62,7 +62,7 @@ nav {
   border-bottom: 2px solid;
 }
 
-.dateTime {
+/* .dateTime {
   position: absolute;
   top: 50%;
   left: 5%;
@@ -70,7 +70,7 @@ nav {
   font-family: cursive;
   padding: 2px;
   border: 1px solid;
-}
+} */
 
 .menu {
   display: flex;
