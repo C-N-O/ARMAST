@@ -62,16 +62,6 @@ nav {
   border-bottom: 2px solid;
 }
 
-/* .dateTime {
-  position: absolute;
-  top: 50%;
-  left: 5%;
-  background-color: violet;
-  font-family: cursive;
-  padding: 2px;
-  border: 1px solid;
-} */
-
 .menu {
   display: flex;
   justify-content: center;
