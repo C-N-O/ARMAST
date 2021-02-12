@@ -83,7 +83,7 @@ nav {
   margin-top: 2rem;
   background-color: powderblue;
   width: 95%;
-  font-size: xx-large;
+  font-size: 24px;
   padding: 12px 0 12px 0;
   border: 2px solid;
   cursor: pointer;
@@ -93,7 +93,14 @@ nav {
 
 .home--categories {
   margin-top: 1em;
-  display: flex;
+  display: block;
+}
+
+@media only screen and (min-width: 1024px) {
+  .home--categories {
+    margin-top: 1em;
+    display: flex;
+  }
 }
 
 .array--methods,
@@ -101,6 +108,7 @@ nav {
 .math--methods {
   outline: none;
   cursor: pointer;
+  height: 9rem;
   margin: 2px 0 0px 1px;
   width: 100%;
   padding: 10px;
@@ -109,7 +117,7 @@ nav {
   border-radius: 7rem;
   box-shadow: 0 1rem 1rem rgb(0 0 0 / 30%);
   z-index: 10;
-  font-size: 5rem;
+  font-size: 2rem;
   background: linear-gradient(0.25turn, #52b1a6, #ebf8e1, #8c4f69);
 }
 
@@ -165,7 +173,7 @@ nav {
 
 .parentEl {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .message {
@@ -178,7 +186,7 @@ nav {
   cursor: pointer;
   background-color: thistle;
   margin: 1rem;
-  font-size: 2rem;
+  font-size: 28px;
   padding: 2px;
   border: 2px;
   text-align: center;

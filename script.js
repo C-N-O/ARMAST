@@ -85,14 +85,14 @@ function renderArrayList(result, str) {
 
 //show all methods that modify the original array
 function showModifiers() {
-  const str = `See ${groupName} methods that will modify the original ${groupName}`;
+  const str = `These ${groupName} methods will modify the original ${groupName}`;
   const result = methodGroup.filter(el => el.mod === true);
   renderArrayList(result, str);
 }
 
 //show all methods that do not  modify the original array
 function showNonModifiers() {
-  const str = `See ${groupName} methods that will not modify the original ${groupName}`;
+  const str = `These ${groupName} methods will not modify the original ${groupName}`;
   const result = methodGroup.filter(el => el.mod === false);
   renderArrayList(result, str);
 }
@@ -100,7 +100,11 @@ function showNonModifiers() {
 //update the displays when menu btns are clicked
 function updateStyles(className) {
   if (className === 'home') {
-    homeCategories.style.display = 'flex';
+    //media query
+    if (window.matchMedia('(min-width: 1024px)').matches) {
+      homeCategories.style.display = 'flex';
+    } else homeCategories.style.display = 'block';
+
     centerArray.style.display = 'none';
     centerString.style.display = 'none';
     centerMath.style.display = 'none';
@@ -120,8 +124,8 @@ function updateStyles(className) {
     usageMsg.textContent = `Some ${groupName} methods modify the original ${groupName}, but some do not.`;
     ParentEl.innerHTML = '';
     usageBTNs.style.display = 'flex';
-    btnModify.textContent = `These ${groupName} methods modify the original ${groupName}`;
-    btnNotModify.textContent = `These ${groupName} methods will not modify the original ${groupName}`;
+    btnModify.textContent = `${groupName} methods that modify the original ${groupName}`;
+    btnNotModify.textContent = `${groupName} methods will not modify the original ${groupName}`;
     MessageEl.textContent = '';
     centerArray.style.display = 'none';
     centerString.style.display = 'none';
@@ -153,7 +157,7 @@ document
       homeCategories.style.display = 'none';
       usagePage.style.display = 'none';
       centerArray.style.display = 'grid';
-      centerArray.style.gridTemplateColumns = '1fr 1fr 1fr 1fr';
+      centerArray.style.gridTemplateColumns = '1fr 1fr 1fr';
       centerArray.style.gridTemplateRows = '100px 100px';
     }
 
@@ -164,7 +168,7 @@ document
       usageMsg.textContent = `Some ${groupName} methods modify the original ${groupName}, but some do not.`;
       centerString.style.opacity = 1;
       centerString.style.display = 'grid';
-      centerString.style.gridTemplateColumns = '1fr 1fr 1fr 1fr';
+      centerString.style.gridTemplateColumns = '1fr 1fr 1fr';
       centerString.style.gridTemplateRows = '100px 100px';
       homeCategories.style.display = 'none';
     }
@@ -174,7 +178,7 @@ document
       usageMsg.textContent = `Some ${groupName} methods modify the original ${groupName}, but some do not.`;
       centerMath.style.opacity = 1;
       centerMath.style.display = 'grid';
-      centerMath.style.gridTemplateColumns = '1fr 1fr 1fr 1fr';
+      centerMath.style.gridTemplateColumns = '1fr 1fr 1fr';
       centerMath.style.gridTemplateRows = '100px 100px';
       homeCategories.style.display = 'none';
       usagePage.style.display = 'none';
