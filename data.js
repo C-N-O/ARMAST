@@ -265,6 +265,36 @@ export const stringMethods = [
     returnValue:
       'A String consisting of the single UTF-16 code unit located at the specified position. Returns undefined if the given index can not be found.',
   },
+  {
+    name: 'charAt',
+    function:
+      'This method returns a new string consisting of the single UTF-16 code unit located at the specified offset into the string',
+    reference:
+      'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/charAt',
+    mod: false,
+    returnValue:
+      'A string representing the character at the specified index. If index is out of range, charAt() returns an empty string',
+  },
+  {
+    name: 'charCodeAt',
+    function:
+      'The charCodeAt() method returns an integer between 0 and 65535 representing the UTF-16 code unit at the given index',
+    reference:
+      'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/charCodeAt',
+    mod: false,
+    returnValue:
+      'A number representing the UTF-16 code unit value of the character at the given index. If index is out of range, charCodeAt() returns NaN.',
+  },
+  {
+    name: 'codePointAt',
+    function:
+      'The codePointAt() method returns a non-negative integer that is the UTF-16 code point value.',
+    reference:
+      'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/codePointAt',
+    mod: false,
+    returnValue:
+      'A number representing the code point value of the character at the given pos. If there is no element at pos, returns undefined',
+  },
 ];
 
 export const mathMethods = [

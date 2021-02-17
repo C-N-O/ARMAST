@@ -37,6 +37,12 @@ let date = '';
 let methodGroup = '';
 let groupName = '';
 
+document.addEventListener('visibilitychange', e => {
+  if (document.hidden)
+    document.querySelector('.title').textContent = 'Page is waiting...';
+  else document.querySelector('.title').textContent = 'ARMAST';
+});
+
 // setInterval(() => {
 //   date = new Date();
 //   console.log(date);
@@ -66,7 +72,7 @@ const openModal = function (
   methodReference.setAttribute('href', method_Reference);
   methodReference.setAttribute('target', '_blank');
   methodReference.textContent = 'Reference';
-  modOriArrEl.textContent = 'Modifies The Original Array: ' + modifies;
+  modOriArrEl.textContent = `Modifies the original ${groupName}: ` + modifies;
   returnValueEl.textContent = 'Return Value: ' + returnValue;
 
   overlay.classList.remove('hidden');

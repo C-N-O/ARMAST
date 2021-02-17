@@ -109,7 +109,7 @@ nav {
   outline: none;
   cursor: pointer;
   height: 9rem;
-  margin: 2px 0 0px 1px;
+  margin: 2px 0 30px 1px;
   width: 100%;
   padding: 10px;
   text-align: center;
@@ -119,6 +119,12 @@ nav {
   z-index: 10;
   font-size: 2rem;
   background: linear-gradient(0.25turn, #52b1a6, #ebf8e1, #8c4f69);
+}
+.home--categories .math--methods {
+  background: linear-gradient(to right, #f0c27b, #ccc128, #dd8cd2);
+}
+.home--categories .string--methods {
+  background: linear-gradient(to right, #1fa2ff, #12d8fa, #a6ffcb);
 }
 
 .hidden {
@@ -165,7 +171,7 @@ nav {
 .modifiesOriginalArray,
 .return--value {
   font-size: 1em;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
   background-color: bisque;
   width: fit-content;
   padding: 10px;
